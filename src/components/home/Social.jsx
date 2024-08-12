@@ -13,7 +13,7 @@ export const Social = () => {
         className="home__social-icon"
         target="_blank"
       >
-        <i class="uil uil-linkedin-alt"></i>
+        <i className="uil uil-linkedin-alt"></i>
       </a>
       <a
         href="https://github.com/MartinMFM"

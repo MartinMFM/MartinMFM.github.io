@@ -8,7 +8,7 @@ export const Header = () => {
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
-          Smith
+          Martin
         </a>
 
         <div className={`nav__menu ${showMenu ? "show-menu" : ""} `}>
