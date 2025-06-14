@@ -17,15 +17,21 @@ export const translations = {
         "Apasionado por convertir ideas en soluciones digitales. Desarrollo aplicaciones web y móviles con enfoque en experiencias funcionales, escalables y centradas en el usuario. Comprometido con el aprendizaje constante y la mejora continua.",
       sayHello: "Saludar",
       scroll: "Desplazar hacia abajo",
-    },
-
-    // About section
+    }, // About section
     about: {
       title: "Acerca de Mí",
       subtitle: "Mi introducción",
       description:
         "Estudiante de Ingeniería en Sistemas Computacionales con enfoque en desarrollo FullStack. He liderado y colaborado en el desarrollo de aplicaciones web y móviles, participando tanto en frontend como en backend, utilizando tecnologías como React, Next.js, Node.js y TypeScript.",
       cv: "Descargar CV",
+      info: {
+        learning: "Aprendizaje",
+        learningSubtitle: "Mejora Continua",
+        completed: "Completados",
+        completedSubtitle: "3+ Proyectos",
+        support: "Soporte",
+        supportSubtitle: "En línea 24/7",
+      },
     },
 
     // Skills section
@@ -49,11 +55,28 @@ export const translations = {
     work: {
       title: "Portafolio",
       subtitle: "Trabajos más recientes",
-      demo: "Demo",
+      view: "Ver Proyecto",
       all: "Todo",
       design: "Diseño",
       web: "Web",
       app: "App",
+    }, // Projects
+    projects: {
+      storeMFM: {
+        title: "StoreMFM - Almacenamiento de archivos en la nube",
+        description:
+          "Plataforma para almacenamiento de archivos en la nube, que permite a los usuarios subir, organizar y gestionar sus archivos de manera segura y eficiente. Desarrollada con enfoque en experiencia de usuario, seguridad y escalabilidad.",
+      },
+      moodly: {
+        title: "Moodly - Aplicación de salud mental",
+        description:
+          "Aplicación móvil enfocada en el bienestar mental y emocional, que integra un asistente psicológico impulsado por IA. Ofrece herramientas para el seguimiento del estado de ánimo, audios de relajación, lecturas y una comunidad de usuarios donde es posible crear grupos de apoyo y mantener charlas individuales. Desarrollada con React Native para brindar una experiencia fluida y nativa en dispositivos móviles.",
+      },
+      cookly: {
+        title: "Cookly - Aplicación web de recetas de cocina",
+        description:
+          "Aplicación web que permite descubrir recetas en función de los ingredientes ingresados por el usuario. Incluye filtros avanzados de búsqueda para personalizar los resultados, además de funciones para guardar y descargar recetas favoritas.",
+      },
     },
 
     // Contact section
@@ -100,9 +123,7 @@ export const translations = {
         "Passionate about turning ideas into digital solutions. I develop web and mobile applications with a focus on functional, scalable, and user-centered experiences. Committed to constant learning and continuous improvement.",
       sayHello: "Say Hello",
       scroll: "Scroll Down",
-    },
-
-    // About section
+    }, // About section
     about: {
       title: "About Me",
       subtitle: "My introduction",
@@ -112,6 +133,14 @@ export const translations = {
       experience: "Years of experience",
       completed: "Completed projects",
       companies: "Companies worked",
+      info: {
+        learning: "Learning",
+        learningSubtitle: "Continuous Improvement",
+        completed: "Completed",
+        completedSubtitle: "3+ Projects",
+        support: "Support",
+        supportSubtitle: "Online 24/7",
+      },
     },
 
     // Skills section
@@ -135,11 +164,28 @@ export const translations = {
     work: {
       title: "Portfolio",
       subtitle: "Most recent works",
-      demo: "Demo",
+      view: "View Project",
       all: "All",
       design: "Design",
       web: "Web",
       app: "App",
+    },
+    projects: {
+      storeMFM: {
+        title: "StoreMFM - Cloud File Storage",
+        description:
+          "Cloud file storage platform that allows users to upload, organize and manage their files securely and efficiently. Developed with a focus on user experience, security and scalability.",
+      },
+      moodly: {
+        title: "Moodly - Mental Health App",
+        description:
+          "Mobile application focused on mental and emotional well-being, integrating an AI-powered psychological assistant. It offers tools for mood tracking, relaxation audio, readings, and a user community where it's possible to create support groups and maintain individual chats. Developed with React Native to provide a smooth and native experience on mobile devices.",
+      },
+      cookly: {
+        title: "Cookly - Recipe Web Application",
+        description:
+          "Web application that allows discovering recipes based on ingredients entered by the user. Includes advanced search filters to customize results, as well as functions to save and download favorite recipes.",
+      },
     },
 
     // Contact section

@@ -1,4 +1,8 @@
+import { useTranslation } from "../../hooks/useTranslation";
+
 export const Info = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="about__info grid">
       {/* <div className="about__box">
@@ -8,20 +12,26 @@ export const Info = () => {
       </div> */}
       <div className="about__box">
         <i className="bx bx-bulb about__icon"></i>
-        <h3 className="about__title">Learning</h3>
-        <span className="about__subtitle">Continuous Improvement</span>
+        <h3 className="about__title">{t("about.info.learning")}</h3>
+        <span className="about__subtitle">
+          {t("about.info.learningSubtitle")}
+        </span>
       </div>
 
       <div className="about__box">
         <i className="bx bx-briefcase-alt about__icon"></i>
-        <h3 className="about__title">Completed</h3>
-        <span className="about__subtitle">3+ Projects</span>
+        <h3 className="about__title">{t("about.info.completed")}</h3>
+        <span className="about__subtitle">
+          {t("about.info.completedSubtitle")}
+        </span>
       </div>
 
       <div className="about__box">
         <i className="bx bx-support about__icon"></i>
-        <h3 className="about__title">Support</h3>
-        <span className="about__subtitle">Online 24/7</span>
+        <h3 className="about__title">{t("about.info.support")}</h3>
+        <span className="about__subtitle">
+          {t("about.info.supportSubtitle")}
+        </span>
       </div>
     </div>
   );

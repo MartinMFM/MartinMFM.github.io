@@ -3,12 +3,15 @@ import { projectsData, projectsNav } from "./Data";
 import { WorkItems } from "./WorkItems";
 import { useEffect } from "react";
 import { useTranslation } from "../../hooks/useTranslation";
+import WorkModal from "./WorkModal";
 
 export const Works = () => {
   const { t } = useTranslation();
   const [item, setItem] = useState({ name: "all" });
   const [projects, setProjects] = useState([]);
   const [active, setActive] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
   // Función para obtener el texto traducido según el nombre de la categoría
   const getTranslatedCategoryName = (categoryName) => {
     switch (categoryName) {
@@ -26,7 +29,7 @@ export const Works = () => {
   };
 
   useEffect(() => {
-    if (item.name === "all") {
+    if (item.name === "all" || item.name === "todo") {
       setProjects(projectsData);
     } else {
       const newProjects = projectsData.filter((project) => {
@@ -35,10 +38,19 @@ export const Works = () => {
       setProjects(newProjects);
     }
   }, [item]);
-
   const onClickCategory = (e, index) => {
     setItem({ name: e.target.textContent.toLowerCase() });
     setActive(index);
+  };
+
+  const openModal = (project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
   };
 
   return (
@@ -57,13 +69,19 @@ export const Works = () => {
             </span>
           );
         })}
-      </div>
-
+      </div>{" "}
       <div className="work__container container grid">
         {projects.map((item) => {
-          return <WorkItems item={item} key={item.id} />;
+          return (
+            <WorkItems item={item} key={item.id} onOpenModal={openModal} />
+          );
         })}
       </div>
+      <WorkModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        project={selectedProject}
+      />
     </>
   );
 };

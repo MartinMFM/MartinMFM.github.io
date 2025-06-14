@@ -102,6 +102,19 @@
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
+
+  .qualification__data {
+    column-gap: 1rem;
+  }
+
+  .qualification__rounder {
+    width: 11px;
+    height: 11px;
+  }
+
+  .qualification__line {
+    transform: translate(5px, -7px);
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -112,11 +125,37 @@
   .qualification__button {
     margin: 0 var(--mb-0-75);
   }
+
+  .qualification__data {
+    column-gap: 0.75rem;
+  }
+
+  .qualification__rounder {
+    width: 10px;
+    height: 10px;
+  }
+
+  .qualification__line {
+    transform: translate(4.5px, -6px);
+  }
 }
 
 /* For small devices */
 @media screen and (max-width: 350px) {
   .qualification__data {
     gap: 0.5rem;
+  }
+
+  .qualification__rounder {
+    width: 9px;
+    height: 9px;
+  }
+
+  .qualification__line {
+    transform: translate(4px, -5px);
+  }
+
+  .qualification__data-content {
+    padding: 0.75rem 0.5rem;
   }
 }
