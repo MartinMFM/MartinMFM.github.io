@@ -10,6 +10,7 @@ import { Contact } from "./components/contact/Contact";
 import { Footer } from "./components/footer/Footer";
 import { ScrollUp } from "./components/scrollup/ScrollUp";
 import { Work } from "./components/work/Work";
+import Certificates from "./components/certificates/Certificates";
 
 export const App = () => {
   return (
@@ -19,6 +20,7 @@ export const App = () => {
         <Home />
         <About />
         <Skills />
+        <Certificates />
         <Qualification />
         <Work />
         <Contact />

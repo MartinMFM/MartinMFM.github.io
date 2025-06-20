@@ -40,7 +40,12 @@ export const translations = {
       subtitle: "Mi nivel técnico",
       frontend: "Desarrollador Frontend",
       backend: "Desarrollador Backend",
-    }, // Qualification section
+    },
+    // Certificates sescion
+    certificates: {
+      title: "Certificados",
+    },
+    // Qualification section
     qualification: {
       title: "Formación",
       subtitle: "Mi trayectoria profesional",
@@ -51,7 +56,8 @@ export const translations = {
         computerSystems: "Ingeniería en Sistemas Computacionales",
         programmingTech: "Técnico en Programación",
       },
-    }, // Work/Portfolio section
+    },
+    // Work/Portfolio section
     work: {
       title: "Portafolio",
       subtitle: "Trabajos más recientes",
@@ -60,7 +66,8 @@ export const translations = {
       design: "Diseño",
       web: "Web",
       app: "App",
-    }, // Projects
+    },
+    // Projects
     projects: {
       storeMFM: {
         title: "StoreMFM - Almacenamiento de archivos en la nube",
@@ -98,7 +105,8 @@ export const translations = {
         projectPlaceholder: "Escribe tu proyecto",
         sendMessage: "Enviar Mensaje",
       },
-    }, // Footer
+    },
+    // Footer
     footer: {
       about: "Acerca",
       projects: "Proyectos",
@@ -149,7 +157,12 @@ export const translations = {
       subtitle: "My technical level",
       frontend: "Frontend Developer",
       backend: "Backend Developer",
-    }, // Qualification section
+    },
+    // Certificates sescion
+    certificates: {
+      title: "Certificates",
+    },
+    // Qualification section
     qualification: {
       title: "Qualification",
       subtitle: "My personal journey",
@@ -160,7 +173,8 @@ export const translations = {
         computerSystems: "Computer Systems Engineering",
         programmingTech: "Programming Technician",
       },
-    }, // Work/Portfolio section
+    },
+    // Work/Portfolio section
     work: {
       title: "Portfolio",
       subtitle: "Most recent works",
@@ -207,7 +221,8 @@ export const translations = {
         projectPlaceholder: "Write your project",
         sendMessage: "Send Message",
       },
-    }, // Footer
+    },
+    // Footer
     footer: {
       about: "About",
       projects: "Projects",
