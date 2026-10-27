@@ -1,4 +1,5 @@
 import { useTranslation } from "../../hooks/useTranslation";
+import { groupSkills } from "../../utils/groupSkills";
 
 export const Frontend = () => {
   const { t } = useTranslation();
@@ -12,20 +13,10 @@ export const Frontend = () => {
     "HTML",
     "CSS/SCSS",
     "Tailwind",
-    "MUI",
     "Shadcn/ui",
-    "Bootstrap",
   ];
 
-  const groupSkills = (skills, groupSize) => {
-    const groupedSkills = [];
-    for (let i = 0; i < skills.length; i += groupSize) {
-      groupedSkills.push(skills.slice(i, i + groupSize));
-    }
-    return groupedSkills;
-  };
-
-  const groupedSkills = groupSkills(skills, 6);
+  const groupedSkills = groupSkills(skills, 5);
 
   return (
     <div className="skills__content">

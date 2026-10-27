@@ -16,14 +16,15 @@ const QualificationTab = ({ title, icon, isActive, onClick }) => (
 
 const QualificationItem = ({ title, subtitle, date, isRight }) => (
   <div className="qualification__data">
-    {isRight && <div></div>}
-    {isRight && (
-      <div>
-        <span className="qualification__rounder"></span>
-        <span className="qualification__line"></span>
-      </div>
-    )}
-    <div className="qualification__data-content">
+    <div className="qualification__marker">
+      <span className="qualification__rounder"></span>
+      <span className="qualification__line"></span>
+    </div>
+    <div
+      className={`qualification__data-content ${
+        isRight ? "qualification__data-content-right" : ""
+      }`}
+    >
       <h3 className="qualification__title">{title}</h3>
       <span className="qualification__subtitle">{subtitle}</span>
       <div className="qualification__calendar">
@@ -31,12 +32,6 @@ const QualificationItem = ({ title, subtitle, date, isRight }) => (
         {date}
       </div>
     </div>
-    {!isRight && (
-      <div>
-        <span className="qualification__rounder"></span>
-        <span className="qualification__line"></span>
-      </div>
-    )}
   </div>
 );
 
@@ -47,7 +42,7 @@ export const Qualification = () => {
     {
       title: t("qualification.educationData.computerSystems"),
       subtitle: "Instituto Tecnológico de Culiacán",
-      date: `2021 - ${t("qualification.present")}`,
+      date: "2021 - 2026",
     },
     {
       title: t("qualification.educationData.programmingTech"),

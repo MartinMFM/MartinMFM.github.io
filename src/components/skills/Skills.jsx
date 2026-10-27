@@ -1,6 +1,7 @@
 import { useTranslation } from "../../hooks/useTranslation";
 import { Backend } from "./Backend";
 import { Frontend } from "./Frontend";
+import { Tools } from "./Tools";
 import "./skill.css";
 
 export const Skills = () => {
@@ -14,6 +15,7 @@ export const Skills = () => {
       <div className="skills__container container grid">
         <Frontend />
         <Backend />
+        <Tools />
       </div>
     </section>
   );

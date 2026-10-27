@@ -136,6 +136,7 @@ img {
 
 /*=============== LAYOUT ===============*/
 .container {
+  width: 100%;
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;
@@ -173,6 +174,7 @@ img {
 /* For large devices */
 @media screen and (max-width: 992px) {
   .container {
+    width: calc(100% - 3rem);
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
@@ -212,6 +214,7 @@ img {
   }
 
   .container {
+    width: calc(100% - 2rem);
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }

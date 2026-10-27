@@ -16,6 +16,7 @@ import {
   cookly5,
   cookly6,
 } from "../../assets/Cookly";
+import { jotion1, jotion2, jotion3, jotion4 } from "../../assets/jotion";
 
 export const projectsData = [
   {
@@ -53,6 +54,21 @@ export const projectsData = [
     category: "web",
     galleryImages: [cookly1, cookly2, cookly3, cookly4, cookly5, cookly6],
     technologies: ["Vue.js", "JavaScript", "Node.js", "Express.js", "Firebase"],
+  },
+  {
+    id: 4,
+    mainImage: jotion1,
+    title: "projects.jotion.title",
+    category: "web",
+    galleryImages: [jotion1, jotion2, jotion3, jotion4],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Convex",
+      "Clerk",
+      "BlockNote",
+      "Tailwind CSS",
+    ],
   },
 ];
 

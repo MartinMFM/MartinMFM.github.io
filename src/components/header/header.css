@@ -57,7 +57,12 @@
     bottom: 0;
   }
   .nav {
+    width: 100%;
     height: var(--header-height);
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 1rem;
+    column-gap: 0.5rem;
   }
 
   .nav__menu {
@@ -127,4 +132,10 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__controls {
+    gap: 0.5rem;
+  }
 }

@@ -1,13 +1,14 @@
 .skills__container {
-  grid-template-columns: repeat(2, 350px);
-  column-gap: 3rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 1.5rem;
   justify-content: center;
+  align-items: stretch;
 }
 
 .skills__content {
   background-color: var(--container-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 2rem 4rem;
+  padding: 2rem 1.5rem;
   border-radius: 1.25rem;
 }
 
@@ -21,7 +22,7 @@
 .skills__box {
   display: flex;
   justify-content: center;
-  column-gap: 2.5rem;
+  column-gap: 1.25rem;
 }
 
 .skills__group {
@@ -54,7 +55,7 @@
 /* For large devices */
 @media screen and (max-width: 992px) {
   .skills__container {
-    grid-template-columns: max-content;
+    grid-template-columns: minmax(0, 1fr);
     row-gap: 2rem;
   }
 }

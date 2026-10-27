@@ -1,6 +1,6 @@
 import "./about.css";
 // import AboutImg from "../../assets/perfil.jpg";
-import CV from "../../assets/MartinFlores_CV_2025.pdf";
+import CV from "../../assets/MartinFlores_CV_2026.pdf";
 import { Info } from "./Info";
 import { useTranslation } from "../../hooks/useTranslation";
 

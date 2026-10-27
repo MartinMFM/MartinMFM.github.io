@@ -19,10 +19,10 @@ export const translations = {
       scroll: "Desplazar hacia abajo",
     }, // About section
     about: {
-      title: "Acerca de Mí",
+      title: "Acerca de mí",
       subtitle: "Mi introducción",
       description:
-        "Estudiante de Ingeniería en Sistemas Computacionales con enfoque en desarrollo FullStack. He liderado y colaborado en el desarrollo de aplicaciones web y móviles, participando tanto en frontend como en backend, utilizando tecnologías como React, Next.js, Node.js y TypeScript.",
+        "Egresado de Ingeniería en Sistemas Computacionales con enfoque en desarrollo de software Full Stack y Backend. He liderado y colaborado en el desarrollo de aplicaciones web y móviles, participando tanto en Frontend y Backend, automatización de procesos y extracción de información. He trabajado con tecnologías como React, Next.js, Node.js, TypeScript, Java y Spring Boot. Disfruto trabajar en equipos colaborativos y aprender nuevas tecnologías para seguir creciendo profesionalmente.",
       cv: "Descargar CV",
       info: {
         learning: "Aprendizaje",
@@ -38,8 +38,9 @@ export const translations = {
     skills: {
       title: "Habilidades",
       subtitle: "Mi nivel técnico",
-      frontend: "Desarrollador Frontend",
-      backend: "Desarrollador Backend",
+      frontend: "Frontend",
+      backend: "Backend",
+      tools: "Herramientas",
     },
     // Certificates sescion
     certificates: {
@@ -83,6 +84,11 @@ export const translations = {
         title: "Cookly - Aplicación web de recetas de cocina",
         description:
           "Aplicación web que permite descubrir recetas en función de los ingredientes ingresados por el usuario. Incluye filtros avanzados de búsqueda para personalizar los resultados, además de funciones para guardar y descargar recetas favoritas.",
+      },
+      jotion: {
+        title: "Jotion - Clon de Notion para notas y documentos",
+        description:
+          "Espacio de trabajo para notas y documentos con estructura jerárquica, editor por bloques y publicación mediante enlaces públicos de solo lectura. Incluye autenticación, portadas e iconos por documento, papelera con archivado recursivo y búsqueda rápida con Ctrl+K. Construido con Next.js, Convex y Clerk, con el editor basado en BlockNote.",
       },
     },
 
@@ -136,7 +142,7 @@ export const translations = {
       title: "About Me",
       subtitle: "My introduction",
       description:
-        "Computer Systems Engineering student focused on FullStack development. I have led and collaborated in the development of web and mobile applications, participating in both frontend and backend, using technologies such as React, Next.js, Node.js and TypeScript.",
+        "Computer Systems Engineering graduate with a focus on Full Stack and Backend software development. I have led and collaborated in the development of web and mobile applications, participating in both Frontend and Backend, process automation, and information extraction. I have worked with technologies such as React, Next.js, Node.js, TypeScript, Java, and Spring Boot. I enjoy working in collaborative teams and learning new technologies to continue growing professionally.",
       cv: "Download CV",
       experience: "Years of experience",
       completed: "Completed projects",
@@ -155,8 +161,9 @@ export const translations = {
     skills: {
       title: "Skills",
       subtitle: "My technical level",
-      frontend: "Frontend Developer",
-      backend: "Backend Developer",
+      frontend: "Frontend",
+      backend: "Backend",
+      tools: "Tools",
     },
     // Certificates sescion
     certificates: {
@@ -199,6 +206,11 @@ export const translations = {
         title: "Cookly - Recipe Web Application",
         description:
           "Web application that allows discovering recipes based on ingredients entered by the user. Includes advanced search filters to customize results, as well as functions to save and download favorite recipes.",
+      },
+      jotion: {
+        title: "Jotion - Notion Clone for Notes and Documents",
+        description:
+          "Workspace for notes and documents with a hierarchical structure, block-based editor and publishing through public read-only links. It includes authentication, per-document covers and icons, a trash with recursive archiving and quick search with Ctrl+K. Built with Next.js, Convex and Clerk, with the editor powered by BlockNote.",
       },
     },
 

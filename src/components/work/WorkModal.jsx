@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { useTranslation } from "../../hooks/useTranslation";
 
@@ -6,6 +6,11 @@ const WorkModal = ({ isOpen, onClose, project }) => {
   const { t } = useTranslation();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
+
+  useEffect(() => {
+    setCurrentImageIndex(0);
+    setIsFullscreen(false);
+  }, [project?.id]);
 
   if (!isOpen || !project) return null;
   const nextImage = () => {

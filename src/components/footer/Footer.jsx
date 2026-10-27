@@ -17,7 +17,7 @@ export const Footer = () => {
           </li>
 
           <li>
-            <a href="portfolio" className="footer__link">
+            <a href="#portfolio" className="footer__link">
               {t("footer.projects")}
             </a>
           </li>

@@ -13,7 +13,7 @@
   background-color: var(--container-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 1.25rem;
-  padding: 15px;
+  padding: 2rem 1.5rem;
   cursor: pointer;
 }
 
@@ -60,9 +60,16 @@
 @media screen and (max-width: 765px) {
   .certificates__container {
     display: grid;
-    grid-template-columns: repeat(1, max-content);
+    grid-template-columns: minmax(0, 1fr);
   }
+
+  .certificates__container > a {
+    width: 100%;
+  }
+
   .certificate {
-    width: 330px;
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
   }
 }
